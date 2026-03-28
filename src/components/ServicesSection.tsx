@@ -6,12 +6,12 @@ import {
 const services = [
   {
     icon: FileText,
-    title: "Resume Writing",
+    title: "CV/Resume Writing",
     desc: "Professionally crafted resumes that highlight your strengths and make a lasting impression.",
   },
   {
     icon: Search,
-    title: "Resume Optimization",
+    title: "CV/Resume Optimization",
     desc: "Tailored adjustments to align with specific job descriptions and industry requirements.",
   },
   {

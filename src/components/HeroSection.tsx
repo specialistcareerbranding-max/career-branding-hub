@@ -20,7 +20,7 @@ const HeroSection = () => (
             <img
               src={logo}
               alt="Career Branding Specialist"
-              className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover ring-4 ring-accent/50 mx-auto shadow-2xl"
+              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-accent/50 mx-auto shadow-2xl"
             />
           </div>
         </motion.div>
