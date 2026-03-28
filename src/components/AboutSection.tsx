@@ -1,46 +1,63 @@
 import { motion } from "framer-motion";
 import { Target, Users, Award } from "lucide-react";
 
-const highlights = [
-  { icon: Target, label: "Targeted Approach" },
-  { icon: Users, label: "500+ Clients Served" },
-  { icon: Award, label: "Industry Expertise" },
+const stats = [
+  { icon: Users, value: "500+", label: "Clients Served" },
+  { icon: Target, value: "95%", label: "Success Rate" },
+  { icon: Award, value: "5+", label: "Years Experience" },
 ];
 
 const AboutSection = () => (
-  <section id="about" className="py-20 lg:py-28" style={{ background: "var(--section-gradient)" }}>
+  <section id="about" className="py-24 lg:py-32 bg-background">
     <div className="container mx-auto px-4">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="max-w-3xl mx-auto text-center"
-      >
-        <span className="text-accent font-semibold text-sm uppercase tracking-widest font-body">About Us</span>
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
-          Your Partner in <span className="text-navy">Career Success</span>
-        </h2>
-        <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-body">
-          At Career Branding, we specialize in helping job seekers, students, and professionals craft powerful personal brands. 
-          From expertly written resumes to ATS-optimized documents, we provide the tools and guidance you need to land your dream job, 
-          stand out from the competition, and build a strong professional profile that opens doors.
-        </p>
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="text-accent font-bold text-sm uppercase tracking-widest font-body">About Us</span>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mt-3 mb-6 leading-tight">
+            Your Partner in Career Success
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed font-body mb-4">
+            At Career Branding, we specialize in helping job seekers, students,
+            and professionals craft powerful personal brands.
+          </p>
+          <p className="text-muted-foreground text-base leading-relaxed font-body">
+            From expertly written resumes to ATS-optimized documents, we provide
+            the tools and guidance you need to land your dream job, stand out
+            from the competition, and build a strong professional profile that
+            opens doors.
+          </p>
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-6 mt-10">
-          {highlights.map(({ icon: Icon, label }) => (
-            <div
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="grid grid-cols-3 gap-4"
+        >
+          {stats.map(({ icon: Icon, value, label }, i) => (
+            <motion.div
               key={label}
-              className="flex items-center gap-3 bg-card rounded-xl px-6 py-4 shadow-sm border border-border"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+              className="bg-card border border-border rounded-2xl p-6 text-center"
             >
-              <div className="w-10 h-10 rounded-lg bg-navy flex items-center justify-center">
-                <Icon className="w-5 h-5 text-primary-foreground" />
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mx-auto mb-3">
+                <Icon className="w-6 h-6 text-accent" />
               </div>
-              <span className="font-body font-semibold text-foreground">{label}</span>
-            </div>
+              <p className="font-display text-2xl md:text-3xl font-extrabold text-foreground">{value}</p>
+              <p className="text-muted-foreground text-xs font-body mt-1">{label}</p>
+            </motion.div>
           ))}
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   </section>
 );

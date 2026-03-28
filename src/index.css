@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,48 +6,44 @@
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 40% 13%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 40% 13%;
+    --card: 210 20% 98%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 13%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 218 58% 18%;
+    --primary: 222 47% 11%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 218 40% 28%;
+    --secondary: 215 25% 27%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 43 85% 55%;
-    --accent-foreground: 220 40% 13%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 218 58% 18%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 47% 11%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --gold: 43 85% 55%;
+    --gold: 38 92% 50%;
     --gold-light: 43 80% 70%;
     --teal: 174 60% 42%;
-    --navy: 218 58% 18%;
-    --navy-light: 218 40% 28%;
-    --hero-gradient: linear-gradient(135deg, hsl(218 58% 14%) 0%, hsl(218 50% 22%) 50%, hsl(218 40% 28%) 100%);
-    --gold-gradient: linear-gradient(135deg, hsl(43 85% 55%) 0%, hsl(38 90% 48%) 100%);
-    --section-gradient: linear-gradient(180deg, hsl(220 20% 97%) 0%, hsl(220 25% 94%) 100%);
+    --navy: 222 47% 11%;
+    --navy-light: 215 25% 27%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -77,14 +73,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: hsl(var(--muted));
 }
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--navy));
-  border-radius: 4px;
+  border-radius: 3px;
 }
