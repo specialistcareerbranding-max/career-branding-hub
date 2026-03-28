@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import {
-  FileText, Search, Shield, GraduationCap, Mail, HeartHandshake, Globe,
+  FileText, Search, Shield, GraduationCap, Mail, HeartHandshake, Globe, Linkedin, UserCheck, PenTool,
 } from "lucide-react";
 
 const services = [
   {
     icon: FileText,
-    title: "Resume Writing",
+    title: "CV/Resume Writing",
     desc: "Professionally crafted resumes that highlight your strengths and make a lasting impression.",
   },
   {
     icon: Search,
-    title: "Resume Optimization",
+    title: "CV/Resume Optimization",
     desc: "Tailored adjustments to align with specific job descriptions and industry requirements.",
   },
   {
@@ -38,6 +38,21 @@ const services = [
     icon: Globe,
     title: "Portfolio Website",
     desc: "Custom professional portfolio websites that showcase your work and personal brand.",
+  },
+  {
+    icon: Linkedin,
+    title: "LinkedIn Revamping & Optimization",
+    desc: "Transform your LinkedIn profile into a powerful tool that attracts recruiters and opportunities.",
+  },
+  {
+    icon: UserCheck,
+    title: "Personal Branding",
+    desc: "Build a compelling personal brand that sets you apart and communicates your unique value.",
+  },
+  {
+    icon: PenTool,
+    title: "Content Strategy",
+    desc: "Strategic content planning to establish thought leadership and grow your professional presence.",
   },
 ];
 
