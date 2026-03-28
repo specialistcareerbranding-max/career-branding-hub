@@ -39,6 +39,21 @@ const services = [
     title: "Portfolio Website",
     desc: "Custom professional portfolio websites that showcase your work and personal brand.",
   },
+  {
+    icon: Linkedin,
+    title: "LinkedIn Revamping & Optimization",
+    desc: "Transform your LinkedIn profile into a powerful tool that attracts recruiters and opportunities.",
+  },
+  {
+    icon: UserCheck,
+    title: "Personal Branding",
+    desc: "Build a compelling personal brand that sets you apart and communicates your unique value.",
+  },
+  {
+    icon: PenTool,
+    title: "Content Strategy",
+    desc: "Strategic content planning to establish thought leadership and grow your professional presence.",
+  },
 ];
 
 const ServicesSection = () => (
