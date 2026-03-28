@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  FileText, Search, Shield, GraduationCap, Mail, HeartHandshake, Globe,
+  FileText, Search, Shield, GraduationCap, Mail, HeartHandshake, Globe, Linkedin, UserCheck, PenTool,
 } from "lucide-react";
 
 const services = [
