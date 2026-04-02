@@ -21,13 +21,6 @@ const Footer = () => (
             <span>WhatsApp</span>
           </a>
           <a
-            href="tel:+13365590647"
-            className="flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition text-sm font-body"
-          >
-            <Phone className="w-4 h-4" />
-            <span>+1 336 559 0647</span>
-          </a>
-          <a
             href="mailto:specialistcareerbranding@gmail.com"
             className="flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition text-sm font-body"
           >
