@@ -10,52 +10,52 @@ const HeroSection = () => (
 
     {/* Constellation network SVG */}
     <svg
-      className="absolute inset-0 w-full h-full pointer-events-none opacity-30"
+      className="absolute inset-0 w-full h-full pointer-events-none opacity-50"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid slice"
     >
       <defs>
         <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="hsl(var(--accent))" stopOpacity="0.8" />
+          <stop offset="0%" stopColor="hsl(var(--accent))" stopOpacity="1" />
           <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0" />
         </radialGradient>
       </defs>
       {/* Lines */}
-      <line x1="10%" y1="20%" x2="25%" y2="35%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.4" />
-      <line x1="25%" y1="35%" x2="45%" y2="15%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.3" />
-      <line x1="45%" y1="15%" x2="70%" y2="25%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.35" />
-      <line x1="70%" y1="25%" x2="85%" y2="10%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.3" />
-      <line x1="85%" y1="10%" x2="92%" y2="30%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.25" />
-      <line x1="15%" y1="60%" x2="30%" y2="75%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.3" />
-      <line x1="30%" y1="75%" x2="55%" y2="65%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.35" />
-      <line x1="55%" y1="65%" x2="75%" y2="80%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.3" />
-      <line x1="75%" y1="80%" x2="90%" y2="70%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.25" />
-      <line x1="25%" y1="35%" x2="15%" y2="60%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.2" />
-      <line x1="45%" y1="15%" x2="55%" y2="65%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.15" />
-      <line x1="70%" y1="25%" x2="75%" y2="80%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.2" />
-      <line x1="5%" y1="85%" x2="15%" y2="60%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.2" />
-      <line x1="55%" y1="65%" x2="45%" y2="90%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.25" />
-      <line x1="90%" y1="70%" x2="95%" y2="50%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.2" />
-      <line x1="92%" y1="30%" x2="95%" y2="50%" stroke="hsl(var(--accent))" strokeWidth="0.5" opacity="0.3" />
+      <line x1="10%" y1="20%" x2="25%" y2="35%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.55" />
+      <line x1="25%" y1="35%" x2="45%" y2="15%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.45" />
+      <line x1="45%" y1="15%" x2="70%" y2="25%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.5" />
+      <line x1="70%" y1="25%" x2="85%" y2="10%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.45" />
+      <line x1="85%" y1="10%" x2="92%" y2="30%" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
+      <line x1="15%" y1="60%" x2="30%" y2="75%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.45" />
+      <line x1="30%" y1="75%" x2="55%" y2="65%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.5" />
+      <line x1="55%" y1="65%" x2="75%" y2="80%" stroke="hsl(var(--accent))" strokeWidth="1.2" opacity="0.45" />
+      <line x1="75%" y1="80%" x2="90%" y2="70%" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
+      <line x1="25%" y1="35%" x2="15%" y2="60%" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.35" />
+      <line x1="45%" y1="15%" x2="55%" y2="65%" stroke="hsl(var(--accent))" strokeWidth="0.8" opacity="0.3" />
+      <line x1="70%" y1="25%" x2="75%" y2="80%" stroke="hsl(var(--accent))" strokeWidth="0.8" opacity="0.35" />
+      <line x1="5%" y1="85%" x2="15%" y2="60%" stroke="hsl(var(--accent))" strokeWidth="0.8" opacity="0.35" />
+      <line x1="55%" y1="65%" x2="45%" y2="90%" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
+      <line x1="90%" y1="70%" x2="95%" y2="50%" stroke="hsl(var(--accent))" strokeWidth="0.8" opacity="0.35" />
+      <line x1="92%" y1="30%" x2="95%" y2="50%" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
       {/* Glowing nodes */}
-      <circle cx="10%" cy="20%" r="3" fill="hsl(var(--accent))" opacity="0.7" />
-      <circle cx="25%" cy="35%" r="4" fill="hsl(var(--accent))" opacity="0.8" />
-      <circle cx="45%" cy="15%" r="3" fill="hsl(var(--accent))" opacity="0.6" />
-      <circle cx="70%" cy="25%" r="3.5" fill="hsl(var(--accent))" opacity="0.7" />
-      <circle cx="85%" cy="10%" r="2.5" fill="hsl(var(--accent))" opacity="0.5" />
-      <circle cx="92%" cy="30%" r="3" fill="hsl(var(--accent))" opacity="0.6" />
-      <circle cx="15%" cy="60%" r="3.5" fill="hsl(var(--accent))" opacity="0.7" />
-      <circle cx="30%" cy="75%" r="3" fill="hsl(var(--accent))" opacity="0.6" />
-      <circle cx="55%" cy="65%" r="4" fill="hsl(var(--accent))" opacity="0.8" />
-      <circle cx="75%" cy="80%" r="3" fill="hsl(var(--accent))" opacity="0.65" />
-      <circle cx="90%" cy="70%" r="2.5" fill="hsl(var(--accent))" opacity="0.5" />
-      <circle cx="5%" cy="85%" r="2" fill="hsl(var(--accent))" opacity="0.4" />
-      <circle cx="45%" cy="90%" r="2.5" fill="hsl(var(--accent))" opacity="0.5" />
-      <circle cx="95%" cy="50%" r="2" fill="hsl(var(--accent))" opacity="0.45" />
+      <circle cx="10%" cy="20%" r="4" fill="hsl(var(--accent))" opacity="0.85" />
+      <circle cx="25%" cy="35%" r="5" fill="hsl(var(--accent))" opacity="0.9" />
+      <circle cx="45%" cy="15%" r="4" fill="hsl(var(--accent))" opacity="0.8" />
+      <circle cx="70%" cy="25%" r="4.5" fill="hsl(var(--accent))" opacity="0.85" />
+      <circle cx="85%" cy="10%" r="3.5" fill="hsl(var(--accent))" opacity="0.7" />
+      <circle cx="92%" cy="30%" r="4" fill="hsl(var(--accent))" opacity="0.75" />
+      <circle cx="15%" cy="60%" r="4.5" fill="hsl(var(--accent))" opacity="0.85" />
+      <circle cx="30%" cy="75%" r="4" fill="hsl(var(--accent))" opacity="0.8" />
+      <circle cx="55%" cy="65%" r="5" fill="hsl(var(--accent))" opacity="0.9" />
+      <circle cx="75%" cy="80%" r="4" fill="hsl(var(--accent))" opacity="0.8" />
+      <circle cx="90%" cy="70%" r="3.5" fill="hsl(var(--accent))" opacity="0.7" />
+      <circle cx="5%" cy="85%" r="3" fill="hsl(var(--accent))" opacity="0.6" />
+      <circle cx="45%" cy="90%" r="3.5" fill="hsl(var(--accent))" opacity="0.7" />
+      <circle cx="95%" cy="50%" r="3" fill="hsl(var(--accent))" opacity="0.65" />
       {/* Larger glow halos on key nodes */}
-      <circle cx="25%" cy="35%" r="10" fill="url(#glow)" opacity="0.3" />
-      <circle cx="55%" cy="65%" r="12" fill="url(#glow)" opacity="0.25" />
-      <circle cx="70%" cy="25%" r="9" fill="url(#glow)" opacity="0.2" />
+      <circle cx="25%" cy="35%" r="14" fill="url(#glow)" opacity="0.4" />
+      <circle cx="55%" cy="65%" r="16" fill="url(#glow)" opacity="0.35" />
+      <circle cx="70%" cy="25%" r="12" fill="url(#glow)" opacity="0.3" />
     </svg>
 
     <div className="container mx-auto px-4 relative z-10 py-32">
