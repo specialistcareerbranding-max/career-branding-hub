@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, Send, MessageCircle } from "lucide-react";
+import { Mail, Send, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
