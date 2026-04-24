@@ -13,7 +13,7 @@ const Footer = () => (
         <div className="flex flex-wrap items-center gap-6">
           <a
             href="https://wa.me/2349164617938"
-            target="_blank"
+            target="_top"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition text-sm font-body"
           >
