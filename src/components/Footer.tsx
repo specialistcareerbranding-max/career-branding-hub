@@ -32,7 +32,7 @@ const Footer = () => (
 
       <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center">
         <p className="text-primary-foreground/40 text-xs font-body">
-          © {new Date().getFullYear()} Career Branding Specialist. All rights reserved.
+          © {new Date().getFullYear()} Career Branding. All rights reserved.
         </p>
       </div>
     </div>
