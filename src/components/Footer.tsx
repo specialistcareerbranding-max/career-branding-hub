@@ -12,7 +12,7 @@ const Footer = () => (
 
         <div className="flex flex-wrap items-center gap-6">
           <a
-            href="https://wa.me/13365590647"
+            href="https://wa.me/2349164617938"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition text-sm font-body"
@@ -21,7 +21,7 @@ const Footer = () => (
             <span>WhatsApp</span>
           </a>
           <a
-            href="mailto:specialistcareerbranding@gmail.com"
+            href="mailto:omobuwajoblessing@gmail.com"
             className="flex items-center gap-2 text-primary-foreground/60 hover:text-accent transition text-sm font-body"
           >
             <Mail className="w-4 h-4" />
