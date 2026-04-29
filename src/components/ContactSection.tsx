@@ -50,7 +50,7 @@ const ContactSection = () => {
             className="space-y-4"
           >
             <a
-              href="https://wa.me/2349164617938?text=Hi%2C%20I%27m%20interested%20in%20your%20career%20branding%20services."
+              href="https://wa.me/13365590647?text=Hi%2C%20I%27m%20interested%20in%20your%20career%20branding%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-background border border-border rounded-2xl p-5 hover:border-accent/40 hover:shadow-md transition-all group"
@@ -60,13 +60,13 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">WhatsApp</p>
-                <p className="font-display font-bold text-foreground group-hover:text-accent transition-colors">+234 916 461 7938</p>
+                <p className="font-display font-bold text-foreground group-hover:text-accent transition-colors">+1 (336) 559-0647</p>
               </div>
             </a>
 
 
             <a
-              href="mailto:omobuwajoblessing@gmail.com"
+              href="mailto:specialistcareerbranding@gmail.com"
               className="flex items-center gap-4 bg-background border border-border rounded-2xl p-5 hover:border-accent/40 hover:shadow-md transition-all group"
             >
               <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center flex-shrink-0">
@@ -74,7 +74,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">Email</p>
-                <p className="font-display font-bold text-foreground group-hover:text-accent transition-colors break-all">omobuwajoblessing@gmail.com</p>
+                <p className="font-display font-bold text-foreground group-hover:text-accent transition-colors break-all">specialistcareerbranding@gmail.com</p>
               </div>
             </a>
           </motion.div>
