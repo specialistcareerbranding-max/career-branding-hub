@@ -51,7 +51,7 @@ const ContactSection = () => {
           >
             <a
               href="https://wa.me/2349164617938?text=Hi%2C%20I%27m%20interested%20in%20your%20career%20branding%20services."
-              target="_top"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-background border border-border rounded-2xl p-5 hover:border-accent/40 hover:shadow-md transition-all group"
             >
