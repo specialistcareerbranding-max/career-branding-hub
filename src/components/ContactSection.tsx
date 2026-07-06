@@ -75,8 +75,21 @@ const ContactSection = () => {
                 <Mail className="w-5 h-5 text-accent-foreground" />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">Email</p>
+                <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">General Email</p>
                 <p className="font-display font-bold text-foreground group-hover:text-accent transition-colors break-all">specialistcareerbranding@gmail.com</p>
+              </div>
+            </a>
+
+            <a
+              href="mailto:careerbranding.document@gmail.com"
+              className="flex items-center gap-4 bg-background border border-border rounded-2xl p-5 hover:border-accent/40 hover:shadow-md transition-all group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-primary-foreground" />
+              </div>
+              <div>
+                <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">Documents Email</p>
+                <p className="font-display font-bold text-foreground group-hover:text-accent transition-colors break-all">careerbranding.document@gmail.com</p>
               </div>
             </a>
           </motion.div>
