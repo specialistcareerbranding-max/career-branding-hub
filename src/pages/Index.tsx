@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => (
   <div className="min-h-screen">
@@ -15,6 +16,7 @@ const Index = () => (
     <WhyChooseUsSection />
     <ContactSection />
     <Footer />
+    <FloatingWhatsApp />
   </div>
 );
 
