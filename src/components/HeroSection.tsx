@@ -69,8 +69,8 @@ const HeroSection = () => (
           <div className="inline-block">
             <img
               src={profile}
-              alt="Career Branding Specialist"
-              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover ring-2 ring-accent/50 mx-auto shadow-xl"
+              alt="Blessing. O — Career Branding Specialist"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-accent/50 mx-auto shadow-2xl"
             />
           </div>
         </motion.div>
