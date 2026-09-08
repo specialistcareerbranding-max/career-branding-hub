@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import profile from "@/assets/profile.jpg";
 
 const HeroSection = () => (
   <section className="relative min-h-[100vh] flex items-center bg-primary overflow-hidden">
@@ -68,9 +68,9 @@ const HeroSection = () => (
         >
           <div className="inline-block">
             <img
-              src={logo}
+              src={profile}
               alt="Career Branding Specialist"
-              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-accent/50 mx-auto shadow-2xl"
+              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover ring-2 ring-accent/50 mx-auto shadow-xl"
             />
           </div>
         </motion.div>

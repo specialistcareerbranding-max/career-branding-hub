@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Target, Users, Award } from "lucide-react";
+import profile from "@/assets/profile.jpg";
 
 const stats = [
   { icon: Users, value: "500+", label: "Clients Served" },
@@ -31,6 +32,17 @@ const AboutSection = () => (
             from the competition, and build a strong professional profile that
             opens doors.
           </p>
+          <div className="flex items-center gap-4 mt-8">
+            <img
+              src={profile}
+              alt="Scarlett Dawson — Career Branding Specialist"
+              className="w-16 h-16 rounded-full object-cover ring-2 ring-accent/50 shadow-lg"
+            />
+            <div>
+              <p className="font-display font-bold text-foreground">Scarlett Dawson</p>
+              <p className="text-muted-foreground text-sm font-body">Career Branding Specialist</p>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
