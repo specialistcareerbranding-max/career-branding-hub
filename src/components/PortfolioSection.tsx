@@ -1,34 +1,46 @@
 import { motion } from "framer-motion";
-import { FileText, Linkedin, UserCheck, PenTool, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import work1 from "@/assets/image-4.png.asset.json";
+import work2 from "@/assets/image-5.png.asset.json";
+import work3 from "@/assets/image-6.png.asset.json";
+import work4 from "@/assets/image-7.png.asset.json";
+import work5 from "@/assets/image-8.png.asset.json";
 
 const works = [
   {
-    icon: FileText,
-    title: "CV/Resume Writing",
+    image: work1.url,
+    title: "Technology Executive Portfolio",
+    category: "Executive Branding",
     description:
-      "ATS-friendly, professionally written CVs and resumes tailored to each client's industry and dream role.",
-    tags: ["ATS Optimized", "Executive", "Entry Level"],
+      "A dark, editorial one-page portfolio for a global technology executive — resume downloads, credentials, and achievements.",
   },
   {
-    icon: Linkedin,
-    title: "LinkedIn Revamping",
+    image: work2.url,
+    title: "Consultant Executive Portfolio",
+    category: "Personal Branding",
     description:
-      "Complete LinkedIn profile overhauls — headline, about section, experience, and keyword optimization for recruiter visibility.",
-    tags: ["Optimization", "Recruiter SEO", "Branding"],
+      "A polished executive portfolio for a franchise and healthcare consultant with case studies and a strong professional headshot.",
   },
   {
-    icon: UserCheck,
-    title: "Personal Branding",
+    image: work3.url,
+    title: "Sales Leadership Portfolio",
+    category: "Career Portfolio",
     description:
-      "Cohesive personal brand identities that position professionals as stand-out candidates and industry voices.",
-    tags: ["Brand Strategy", "Positioning"],
+      "A constellation-themed leadership portfolio highlighting career milestones, skills, and a downloadable CV.",
   },
   {
-    icon: PenTool,
-    title: "Content Strategy",
+    image: work4.url,
+    title: "General Manager Profile",
+    category: "Professional Profile",
     description:
-      "Strategic content plans and ghostwriting that grow professional visibility and authority online.",
-    tags: ["Ghostwriting", "Growth"],
+      "A clean navy-and-blue profile site for a general manager, centered on experience and a professional biography.",
+  },
+  {
+    image: work5.url,
+    title: "Mortgage Executive Portfolio",
+    category: "Executive Branding",
+    description:
+      "A bold editorial portfolio for a mortgage executive and author, with credentials and a book-a-call feature.",
   },
 ];
 
@@ -48,45 +60,48 @@ const PortfolioSection = () => (
             Portfolio
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-foreground mt-3 mb-4 leading-tight">
-            Work That Gets Results
+            Career Portfolio Websites We've Built
           </h2>
           <p className="text-primary-foreground/60 text-lg font-body max-w-2xl mx-auto leading-relaxed">
-            A look at the services and deliverables that have helped hundreds of
-            professionals land interviews and elevate their careers.
+            Real portfolio websites crafted for executives, consultants, and
+            professionals — each one designed to elevate a personal brand and
+            open doors.
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {works.map(({ icon: Icon, title, description, tags }, i) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {works.map(({ image, title, category, description }, i) => (
             <motion.div
               key={title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group bg-secondary/60 border border-primary-foreground/10 rounded-2xl p-8 hover:border-accent/50 transition-colors"
+              transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
+              className={`group bg-secondary/60 border border-primary-foreground/10 rounded-2xl overflow-hidden hover:border-accent/50 transition-colors ${
+                i < 2 ? "lg:col-span-1" : ""
+              }`}
             >
-              <div className="flex items-start justify-between mb-5">
-                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <Icon className="w-7 h-7 text-accent" />
-                </div>
-                <ArrowUpRight className="w-5 h-5 text-primary-foreground/30 group-hover:text-accent transition-colors" />
+              <div className="relative overflow-hidden">
+                <img
+                  src={image}
+                  alt={title}
+                  loading="lazy"
+                  className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute top-3 left-3 text-[11px] font-body font-semibold uppercase tracking-wider text-accent-foreground bg-accent px-3 py-1 rounded-full">
+                  {category}
+                </span>
               </div>
-              <h3 className="font-display text-xl font-bold text-primary-foreground mb-3">
-                {title}
-              </h3>
-              <p className="text-primary-foreground/60 font-body text-sm leading-relaxed mb-5">
-                {description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs font-body font-medium text-accent bg-accent/10 border border-accent/20 px-3 py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="p-6">
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <h3 className="font-display text-lg font-bold text-primary-foreground">
+                    {title}
+                  </h3>
+                  <ArrowUpRight className="w-5 h-5 shrink-0 text-primary-foreground/30 group-hover:text-accent transition-colors" />
+                </div>
+                <p className="text-primary-foreground/60 font-body text-sm leading-relaxed">
+                  {description}
+                </p>
               </div>
             </motion.div>
           ))}
