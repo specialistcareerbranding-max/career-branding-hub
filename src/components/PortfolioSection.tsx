@@ -15,28 +15,28 @@ const works = [
       "A dark, editorial one-page portfolio for a global technology executive — resume downloads, credentials, and achievements.",
   },
   {
-    image: work2.url,
+    image: work2,
     title: "Consultant Executive Portfolio",
     category: "Personal Branding",
     description:
       "A polished executive portfolio for a franchise and healthcare consultant with case studies and a strong professional headshot.",
   },
   {
-    image: work3.url,
+    image: work3,
     title: "Sales Leadership Portfolio",
     category: "Career Portfolio",
     description:
       "A constellation-themed leadership portfolio highlighting career milestones, skills, and a downloadable CV.",
   },
   {
-    image: work4.url,
+    image: work4,
     title: "General Manager Profile",
     category: "Professional Profile",
     description:
       "A clean navy-and-blue profile site for a general manager, centered on experience and a professional biography.",
   },
   {
-    image: work5.url,
+    image: work5,
     title: "Mortgage Executive Portfolio",
     category: "Executive Branding",
     description:
