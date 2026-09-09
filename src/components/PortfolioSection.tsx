@@ -1,42 +1,42 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import work1 from "@/assets/image-4.png.asset.json";
-import work2 from "@/assets/image-5.png.asset.json";
-import work3 from "@/assets/image-6.png.asset.json";
-import work4 from "@/assets/image-7.png.asset.json";
-import work5 from "@/assets/image-8.png.asset.json";
+import work1 from "@/assets/image-4.png";
+import work2 from "@/assets/image-5.png";
+import work3 from "@/assets/image-6.png";
+import work4 from "@/assets/image-7.png";
+import work5 from "@/assets/image-8.png";
 
 const works = [
   {
-    image: work1.url,
+    image: work1,
     title: "Technology Executive Portfolio",
     category: "Executive Branding",
     description:
       "A dark, editorial one-page portfolio for a global technology executive — resume downloads, credentials, and achievements.",
   },
   {
-    image: work2.url,
+    image: work2,
     title: "Consultant Executive Portfolio",
     category: "Personal Branding",
     description:
       "A polished executive portfolio for a franchise and healthcare consultant with case studies and a strong professional headshot.",
   },
   {
-    image: work3.url,
+    image: work3,
     title: "Sales Leadership Portfolio",
     category: "Career Portfolio",
     description:
       "A constellation-themed leadership portfolio highlighting career milestones, skills, and a downloadable CV.",
   },
   {
-    image: work4.url,
+    image: work4,
     title: "General Manager Profile",
     category: "Professional Profile",
     description:
       "A clean navy-and-blue profile site for a general manager, centered on experience and a professional biography.",
   },
   {
-    image: work5.url,
+    image: work5,
     title: "Mortgage Executive Portfolio",
     category: "Executive Branding",
     description:
