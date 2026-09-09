@@ -8,7 +8,7 @@ import work5 from "@/assets/image-8.png";
 
 const works = [
   {
-    image: work1.url,
+    image: work1,
     title: "Technology Executive Portfolio",
     category: "Executive Branding",
     description:
