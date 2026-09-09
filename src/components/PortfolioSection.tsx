@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import work1 from "@/assets/image-4.png";
-import work2 from "@/assets/image-5.png";
-import work3 from "@/assets/image-6.png";
-import work4 from "@/assets/image-7.png";
-import work5 from "@/assets/image-8.png";
+import work1 from "@/assets/image-4.webp";
+import work2 from "@/assets/image-5.webp";
+import work3 from "@/assets/image-6.webp";
+import work4 from "@/assets/image-7.webp";
+import work5 from "@/assets/image-8.webp";
 
 const works = [
   {
@@ -86,6 +86,7 @@ const PortfolioSection = () => (
                   src={image}
                   alt={title}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <span className="absolute top-3 left-3 text-[11px] font-body font-semibold uppercase tracking-wider text-accent-foreground bg-accent px-3 py-1 rounded-full">

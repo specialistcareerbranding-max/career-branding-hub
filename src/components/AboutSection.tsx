@@ -35,6 +35,8 @@ const AboutSection = () => (
           <div className="flex items-center gap-5 mt-8">
             <img
               src={profile}
+              loading="lazy"
+              decoding="async"
               alt="Blessing. O — Career Branding Specialist"
               className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover ring-4 ring-accent/50 shadow-2xl"
             />
