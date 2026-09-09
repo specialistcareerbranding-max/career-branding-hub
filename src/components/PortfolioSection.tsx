@@ -86,6 +86,7 @@ const PortfolioSection = () => (
                   src={image}
                   alt={title}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <span className="absolute top-3 left-3 text-[11px] font-body font-semibold uppercase tracking-wider text-accent-foreground bg-accent px-3 py-1 rounded-full">
