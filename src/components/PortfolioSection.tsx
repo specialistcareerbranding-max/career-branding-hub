@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import work1 from "@/assets/image-4.png";
-import work2 from "@/assets/image-5.png";
-import work3 from "@/assets/image-6.png";
-import work4 from "@/assets/image-7.png";
-import work5 from "@/assets/image-8.png";
+import work1 from "@/assets/image-4.webp";
+import work2 from "@/assets/image-5.webp";
+import work3 from "@/assets/image-6.webp";
+import work4 from "@/assets/image-7.webp";
+import work5 from "@/assets/image-8.webp";
 
 const works = [
   {
